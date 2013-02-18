@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5AC1832-5615-488D-BCEB-F2E77517924B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Time_Log</RootNamespace>
+    <AssemblyName>Time Log</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <HintPath>..\..\TheTimeManager\TimeManager\TimeManager - New\TheTimeManager\bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.Misc.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Interop.AcroPDFLib">
+      <HintPath>..\..\TheTimeManager\TimeManager\TimeManager - New\TheTimeManager\bin\Debug\Interop.AcroPDFLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogOn.Designer.cs">
+      <DependentUpon>frmLogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmActionLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmActionLog.Designer.cs">
+      <DependentUpon>frmActionLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmCompany.Designer.cs">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmContact.Designer.cs">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmPaydate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmPaydate.Designer.cs">
+      <DependentUpon>frmPaydate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmProject.Designer.cs">
+      <DependentUpon>frmProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmTimeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmTimeLog.Designer.cs">
+      <DependentUpon>frmTimeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogOn.resx">
+      <DependentUpon>frmLogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmActionLog.resx">
+      <DependentUpon>frmActionLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmCompany.resx">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmContact.resx">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmPaydate.resx">
+      <DependentUpon>frmPaydate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmProject.resx">
+      <DependentUpon>frmProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmTimeLog.resx">
+      <DependentUpon>frmTimeLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TimeConnector\TimeConnector.csproj">
+      <Project>{DA957176-04ED-4915-87B2-F1C592725DA1}</Project>
+      <Name>TimeConnector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\Time.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
